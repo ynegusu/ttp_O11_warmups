@@ -9,7 +9,13 @@ SELECT film_id, title, actor_id
 FROM film JOIN film_actor
 WHERE language_id = 1 AND
 	  rating = 'G'
-ORDER BY film_id;
+ORDER BY film_id; ANSWER #1
+
+select film_id, title,language_id ,rating
+from film
+group by film_id
+having language_id = 1 and rating = 'R'
+order bY film_id;
 
 -- ANSWER:
 1 - film JOIN film_actor
